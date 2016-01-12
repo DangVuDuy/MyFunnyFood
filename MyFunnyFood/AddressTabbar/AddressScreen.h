@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddressScreen.h
 //  MyFunnyFood
 //
 //  Created by Dang Vu Duy on 1/5/16.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AddressScreen : UIViewController
+@property(nonatomic, strong) UITableView *tableView;
 
 @end
-

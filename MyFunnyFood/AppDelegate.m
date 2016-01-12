@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "MainScreen.h"
+#import "SaleOffScreen.h"
+#import "AddressScreen.h"
+#import "AboutScreen.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,60 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    MainScreen *mainScreen = [[MainScreen alloc] initWithNibName:@"MainScreen" bundle:nil];
+    mainScreen.title = @"Funny Food";
+    UINavigationController *naviMainScreen = [[UINavigationController alloc] initWithRootViewController:mainScreen];
+    naviMainScreen.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Menu"
+                                                              image:[[UIImage imageNamed:@"menuWhite"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                      selectedImage:[UIImage imageNamed:@"menuWhite"]];
+    
+    SaleOffScreen *saleScreen = [[SaleOffScreen alloc] init];
+    saleScreen.title = @"Sale Off";
+    UINavigationController *naviSaleOffScreen = [[UINavigationController alloc] initWithRootViewController:saleScreen];
+    naviSaleOffScreen.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Sale"
+                                                                 image:[[UIImage imageNamed:@"sale"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                         selectedImage:[UIImage imageNamed:@"sale"]];
+    
+    AddressScreen *addressScreen = [[AddressScreen alloc] init];
+    addressScreen.title = @"Address";
+    UINavigationController *naviAddressScreen = [[UINavigationController alloc] initWithRootViewController:addressScreen];
+    naviAddressScreen.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Address"
+                                                                 image:[[UIImage imageNamed:@"shopWhite2"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                         selectedImage:[UIImage imageNamed:@"shopWhite2"]];
+    
+    AboutScreen *aboutScreen = [[AboutScreen alloc] init];
+    aboutScreen.title = @"About";
+    UINavigationController *naviAboutScreen = [[UINavigationController alloc] initWithRootViewController:aboutScreen];
+    naviAboutScreen.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"About"
+                                                               image:[[UIImage imageNamed:@"aboutWhite"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+                                                       selectedImage:[UIImage imageNamed:@"aboutWhite"]];
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers =@[naviMainScreen, naviSaleOffScreen, naviAddressScreen, naviAboutScreen];
+    tabBarController.tabBar.tintColor = [UIColor blueColor];
+    tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"Banner"];
+    tabBarController.tabBar.translucent = YES;
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor]} forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor colorWithRed:1 green:1 blue:1 alpha:1]} forState:UIControlStateSelected];
+    NSShadow *shadow = [[NSShadow alloc] init];
+    
+    shadow.shadowColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor blueColor], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:@"arial rounded mt bold" size:23], NSFontAttributeName, nil]];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor blueColor]];
+    [[UINavigationBar appearance] setTranslucent:YES];
+
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
+    
+    //NSLog(@"%3.0f - %3.0f",tabBarController.tabBar.bounds.size.width, tabBarController.tabBar.bounds.size.height);
     return YES;
 }
 

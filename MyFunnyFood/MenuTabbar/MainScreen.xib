@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreen">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upm-JD-9UR">
+                    <rect key="frame" x="120" y="119" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Zae-Gm-cEw"/>
+                        <constraint firstAttribute="height" constant="80" id="dcD-N2-QO0"/>
+                    </constraints>
+                    <state key="normal" image="Drink.png"/>
+                    <connections>
+                        <action selector="btndrink:" destination="-1" eventType="touchUpInside" id="eAr-Wq-oLR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aec-Nf-QZF">
+                    <rect key="frame" x="232" y="119" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="2A4-s4-KwW"/>
+                        <constraint firstAttribute="width" constant="80" id="Kjs-2l-Pbf"/>
+                    </constraints>
+                    <state key="normal" image="birthday.png"/>
+                    <connections>
+                        <action selector="btnbirday:" destination="-1" eventType="touchUpInside" id="54x-69-z45"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-BA-t30">
+                    <rect key="frame" x="174" y="248" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="A9F-sU-Slo"/>
+                        <constraint firstAttribute="height" constant="80" id="T5j-Ph-UXZ"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="cookie.png"/>
+                    <connections>
+                        <action selector="btnbread:" destination="-1" eventType="touchUpInside" id="Vwn-8u-bZF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rz-gt-siw">
+                    <rect key="frame" x="120" y="207" width="80" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="6Nn-YH-uSA"/>
+                        <constraint firstAttribute="width" constant="80" id="Gho-51-noL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7m-rQ-GOu">
+                    <rect key="frame" x="232" y="207" width="80" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="0Cb-WP-vlh"/>
+                        <constraint firstAttribute="height" constant="24" id="gpY-Zg-vOW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EX-95-AU0">
+                    <rect key="frame" x="71" y="336" width="80" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="bTe-sU-xSM"/>
+                        <constraint firstAttribute="width" constant="80" id="fSt-KJ-h5P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bread" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfT-eX-4dF">
+                    <rect key="frame" x="174" y="336" width="80" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="gIa-cw-eQQ"/>
+                        <constraint firstAttribute="height" constant="24" id="xGa-TK-XEe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ice Cream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wd-nO-47c">
+                    <rect key="frame" x="9" y="207" width="78" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="LUm-k0-JMN"/>
+                        <constraint firstAttribute="height" constant="21" id="hCU-ts-E19"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLC-4n-lnR">
+                    <rect key="frame" x="66" y="248" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3R4-wf-ofB"/>
+                        <constraint firstAttribute="height" constant="80" id="x4P-gC-BEs"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="bread.png"/>
+                    <connections>
+                        <action selector="btncookie:" destination="-1" eventType="touchUpInside" id="ltA-aN-L2M"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmR-nu-U7a">
+                    <rect key="frame" x="8" y="119" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Kau-S5-PR9"/>
+                        <constraint firstAttribute="width" constant="80" id="Ywc-ss-94j"/>
+                    </constraints>
+                    <state key="normal" image="iceCream.png"/>
+                    <connections>
+                        <action selector="btnicecream:" destination="-1" eventType="touchUpInside" id="ccb-To-E2M"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0EX-95-AU0" firstAttribute="centerX" secondItem="LLC-4n-lnR" secondAttribute="centerX" constant="5" id="1ps-Nl-l1T"/>
+                <constraint firstItem="upm-JD-9UR" firstAttribute="leading" secondItem="LLC-4n-lnR" secondAttribute="trailing" constant="-26" id="2xG-FZ-4km"/>
+                <constraint firstItem="OfT-eX-4dF" firstAttribute="centerX" secondItem="0yb-BA-t30" secondAttribute="centerX" id="5bj-hE-bVQ"/>
+                <constraint firstItem="0EX-95-AU0" firstAttribute="top" secondItem="LLC-4n-lnR" secondAttribute="bottom" constant="8" id="6PB-9K-4uY"/>
+                <constraint firstItem="0yb-BA-t30" firstAttribute="leading" secondItem="upm-JD-9UR" secondAttribute="trailing" constant="-26" id="8Fs-SP-ECe"/>
+                <constraint firstItem="n7m-rQ-GOu" firstAttribute="top" secondItem="aec-Nf-QZF" secondAttribute="bottom" constant="8" id="CDc-zZ-tOv"/>
+                <constraint firstItem="1rz-gt-siw" firstAttribute="top" secondItem="upm-JD-9UR" secondAttribute="bottom" constant="8" id="Dgp-Ya-izT"/>
+                <constraint firstItem="OfT-eX-4dF" firstAttribute="top" secondItem="0yb-BA-t30" secondAttribute="bottom" constant="8" id="F05-1x-K4O"/>
+                <constraint firstItem="upm-JD-9UR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="119" id="LD7-xL-OeA"/>
+                <constraint firstItem="aec-Nf-QZF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="119" id="PvW-Ru-Rb9"/>
+                <constraint firstItem="3wd-nO-47c" firstAttribute="top" secondItem="kmR-nu-U7a" secondAttribute="bottom" constant="8" id="T3y-nt-Oyo"/>
+                <constraint firstItem="n7m-rQ-GOu" firstAttribute="centerX" secondItem="aec-Nf-QZF" secondAttribute="centerX" id="WL8-b7-EgR"/>
+                <constraint firstItem="upm-JD-9UR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YH3-ie-QJr"/>
+                <constraint firstItem="aec-Nf-QZF" firstAttribute="leading" secondItem="upm-JD-9UR" secondAttribute="trailing" constant="32" id="exl-zP-jA4"/>
+                <constraint firstItem="1rz-gt-siw" firstAttribute="centerX" secondItem="upm-JD-9UR" secondAttribute="centerX" id="i0I-4u-iLI"/>
+                <constraint firstItem="LLC-4n-lnR" firstAttribute="top" secondItem="upm-JD-9UR" secondAttribute="bottom" constant="49" id="m7b-Wd-Il1"/>
+                <constraint firstItem="kmR-nu-U7a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="119" id="mhj-aD-GSU"/>
+                <constraint firstItem="upm-JD-9UR" firstAttribute="leading" secondItem="kmR-nu-U7a" secondAttribute="trailing" constant="32" id="nmB-08-sE0"/>
+                <constraint firstItem="3wd-nO-47c" firstAttribute="centerX" secondItem="kmR-nu-U7a" secondAttribute="centerX" id="wiC-ft-U3Q"/>
+                <constraint firstItem="0yb-BA-t30" firstAttribute="top" secondItem="upm-JD-9UR" secondAttribute="bottom" constant="49" id="yMQ-qx-X75"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="498" y="293"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Drink.png" width="111" height="111"/>
+        <image name="birthday.png" width="214" height="208"/>
+        <image name="bread.png" width="80" height="80"/>
+        <image name="cookie.png" width="80" height="80"/>
+        <image name="iceCream.png" width="80" height="80"/>
+    </resources>
+</document>
